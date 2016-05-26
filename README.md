@@ -20,6 +20,7 @@ Parameters:
 Example:
 
     perl red_ML.update.pl --rnabam in.bam --reference hg19.fa --dbsnp dbsnp138.vcf --simpleRepeat hg19_simpleRepeat.reg.bed --alu hg19.alu.bed --snplist snp.list --outdir outdir
+    Besides, we have offered the example datasets in the software package. You could test the example to guarantee the software package you have downloaded to be completed and it need only about 2 minutes to run the example compleletly.
 
 Requirements:
 
