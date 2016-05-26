@@ -31,6 +31,7 @@ Requirements:
     bedtools merge -i simpleRepeat.bed > simpleRepeat.merge.bed
     Alu, downloaded from http://hgdownload.soe.ucsc.edu/goldenPath/hg19/database.
     grep Alu rmsk.txt | awk '{print $6"\t"$7"\t"$8}' > hg19.alu.bed
+    We have handled the required databases, and it offered in software package. You could downloaded all the databases from githup, or handle it by yourself in other way. 
 
 Outputs:
 
