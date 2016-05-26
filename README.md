@@ -35,7 +35,7 @@ Requirements:
 
 Outputs:
 
-    hen the program running completed, three files would be produced in the output directory.
+    When the program running completed, three files would be produced in the output directory.
     RNA_editing.sites.txt is the all reliable RNA editing sites file;
     variation.sites.feature.txt is the all varitaion sites file which contain feature values;
     mut.txt.gz is the all varitaion sites file which contain pileup information;
