@@ -25,6 +25,7 @@ Example:
 Requirements:
 
     Before running this program, several pieces of database are needed.
+    reference (hg19), downloaded from : http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes.
     dbSNP138, downloaded from:http://hgdownload.soe.ucsc.edu/goldenPath/hg19/database.
     simpleRepeat, downloaded from http://hgdownload.soe.ucsc.edu/goldenPath/hg19/database.
     awk '{print $2"\t"$3"\t"$4}' simpleRepeat.txt > simpleRepeat.bed
