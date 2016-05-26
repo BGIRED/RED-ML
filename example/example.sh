@@ -1,0 +1,1 @@
+perl /localdir/RED-ML/bin/red_ML.pl --rnabam /localdir/RED-ML/example/example.rna.bam --reference /localdir/RED-ML/database/hg19.fa --dbsnp /localdir/RED-ML/example/example.dbsnp.vcf --simpleRepeat /localdir/RED-ML/example/example.simpleRepeat.bed --alu /localdir/RED-ML/example/example.alu.bed --outdir /localdir/RED-ML/test
