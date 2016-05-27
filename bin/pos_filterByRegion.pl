@@ -11,7 +11,8 @@ my ( $TRFile, $VRFile) = @ARGV;
 my %region;
 my %index;
 
-open I, $TRFile or die "Cannot open file : $TRFile\n";
+if ($TRFile =~ /\.gz$/) {open I, "gzip -dc $TRFile |" or die "Cannot open file : $TRFile\n";}
+else {open I, $TRFile or die "Cannot open file : $TRFile\n";}
 my (@tmp, $key);
 while ( <I> ) {
 	chomp;
