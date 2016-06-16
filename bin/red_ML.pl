@@ -253,7 +253,7 @@ while (<IN>){
     if ($right eq "GT" ) {$rightvalue = 14;}                  
     if ($right eq "GC" ) {$rightvalue = 15;}                  
     if ($right eq "GG" ) {$rightvalue = 16;}
-    if ($rightbase eq "N" ) {$rightvalue = 17;}
+    if ($rightbase eq "N" or $rightbase eq "") {$rightvalue = 17;}
     
     if ($a[3] eq "A" and $a[12] eq "G") {$AG = 1;}
     elsif ($a[3] eq "T" and $a[12] eq "C"){$AG = 1;}
