@@ -14,7 +14,7 @@ Parameters:
     --alu          [STR] genome alu region annotation file, should be bed format.
     --snplist      [STR] a file included konwn SNP sites, the first two column should be chromosome, position and seperated by Tab, it could be used to remove SNP [optional].
     --outdir       [STR] the directory of output.
-    --p            [NUM] a number between 0 and 1 [default 0.5];
+    --p            [NUM] a number range from 0 to 1 [default 0.5];
     --help         [STR] show this information!
 
 Example:
