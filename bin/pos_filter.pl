@@ -54,7 +54,7 @@ my $pos_num=0;
 if($posfile){
 	print "Reading $posfile\n";
 	if($posfile=~/\.gz$/){
-		open POS,"<:gzip","$posfile" or die $!;
+		open POS,"gzip -dc $posfile |" or die $!;
 	}else{
 		open POS,"$posfile" or die $!;
 	}
