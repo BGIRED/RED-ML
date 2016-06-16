@@ -216,6 +216,7 @@ while (<IN>){
     my $leftbase = uc(substr($hashr{$a[0]},$a[1]-1-1,1)); 
     my $rightbase = uc(substr($hashr{$a[0]},$a[1]-1+1,1));
     my $midbase = uc(substr($hashr{$a[0]},$a[1]-1,1));    
+    if ($midbase eq "N"){next;}
     my $left = $leftbase.$midbase;                            
     my $right = $midbase.$rightbase;                          
     if ($left eq "AA" ) {$leftvalue = 1;}                     
@@ -233,7 +234,8 @@ while (<IN>){
     if ($left eq "GA" ) {$leftvalue = 13;}                    
     if ($left eq "GT" ) {$leftvalue = 14;}                    
     if ($left eq "GC" ) {$leftvalue = 15;}                    
-    if ($left eq "GG" ) {$leftvalue = 16;}                    
+    if ($left eq "GG" ) {$leftvalue = 16;}
+    if ($leftbase eq "N") {$leftvalue = 17;}
                                                               
     if ($right eq "AA" ) {$rightvalue = 1;}                   
     if ($right eq "AT" ) {$rightvalue = 2;}                   
@@ -250,7 +252,9 @@ while (<IN>){
     if ($right eq "GA" ) {$rightvalue = 13;}                  
     if ($right eq "GT" ) {$rightvalue = 14;}                  
     if ($right eq "GC" ) {$rightvalue = 15;}                  
-    if ($right eq "GG" ) {$rightvalue = 16;}  
+    if ($right eq "GG" ) {$rightvalue = 16;}
+    if ($rightbase eq "N" ) {$rightvalue = 17;}
+    
     if ($a[3] eq "A" and $a[12] eq "G") {$AG = 1;}
     elsif ($a[3] eq "T" and $a[12] eq "C"){$AG = 1;}
     else {$AG = 0;}
