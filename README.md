@@ -34,6 +34,10 @@ Requirements:
     grep Alu rmsk.txt | awk '{print $6"\t"$7"\t"$8}' > hg19.alu.bed
     We have handled the required databases, and it offered in software package. You could downloaded all the databases from githup, or handle it by yourself in other way. 
 
+optional:
+
+    If you have DNA datasets, such as DNA alignment, we strongly recommend to take advantage of it. You could call SNP based on this datasets by GATK or SOAPsnp and moidfy the format of result file (such as vcf) to parameter --snplist demanded format.
+
 Outputs:
 
     When the program running completed, three files would be produced in the output directory.
