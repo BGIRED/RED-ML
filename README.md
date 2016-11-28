@@ -36,7 +36,7 @@ Requirements:
 
 optional:
 
-    If you have DNA datasets, such as DNA alignment, we strongly recommend to take advantage of it. You could call SNP based on this datasets by GATK or SOAPsnp and moidfy the format of result file (such as vcf) to parameter --snplist demanded format.
+    If you have DNA datasets, such as DNA alignment, we strongly recommend to take advantage of it. You could call SNP based on this datasets by GATK (haplotypecaller) or SOAPsnp and moidfy the format of result file (such as vcf) to parameter --snplist demanded format.
 
 Outputs:
 
