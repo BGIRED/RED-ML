@@ -158,7 +158,7 @@ while (<IN>){
     my $pos = $a[0]."_".$a[1];
     $var_reads = log($a[13])/log(10);
     $fre = sprintf "%0.3f",($a[13]/$a[2]);
-    if ($fre==1){$highfre=1;}
+    if ($fre>=0.95){$highfre=1;}
     else {$highfre=0;}
     my $temp = 1 - $fre;
     $mfre = $temp > 0.9 ? 0.9 : $temp;
