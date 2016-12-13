@@ -41,8 +41,8 @@ optional:
     
     Alignment:
     Although RED-ML can accept BAM files produced by different alignment tools, the current version has been specifically optimized for BWA and TopHat2 due to the construction of model, and we find that the choice of alignment tools and the associated parameters could have a large impact on RED. To help users with proper alignment strategies, we have detailed some recommendations:
-    When reads are aligned by BWA (recommended), one should first build a new reference which combines reference genome (hg19) and exonic sequences surrounding all known splice junctions, and the detail method is same as Ramaswami et al. and Wang et al. SAMtools was used to sort the alignment file and to remove the PCR duplicate reads.
-    When TopHat2 a fast splice junction mapper for RNA-seq reads is selected, the cleaned reads were mapped to reference genome (hg19) directly with default parameters. Picard was used to sort the alignment and to remove duplicate reads induced by PCR, and base quality score recalibration was carried out by GATK.
+    (1) When reads are aligned by BWA (recommended), one should first build a new reference which combines reference genome (hg19) and exonic sequences surrounding all known splice junctions, and the detail method is same as Ramaswami et al. and Wang et al. SAMtools was used to sort the alignment file and to remove the PCR duplicate reads.
+    (2) When TopHat2 a fast splice junction mapper for RNA-seq reads is selected, the cleaned reads were mapped to reference genome (hg19) directly with default parameters. Picard was used to sort the alignment and to remove duplicate reads induced by PCR, and base quality score recalibration was carried out by GATK.
    
     
 Outputs:
