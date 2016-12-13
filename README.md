@@ -3,7 +3,7 @@ RNA editing detection based on machine learning
 
 Description:
 
-    This program is used to identify RNA editing sites based on machine learning.  All of the programs were located in directory of bin when the software package was decompressed. The software package could only run on linux platform currently and the main program is red_ML.pl.
+    RED-ML is a software tool to do genome-wide RNA editing dectection (RED) based on RNA-seq data. All source codes and executables are located in the "bin" directory.  The tool can be run on a Linux platform and the main program is red_ML.pl.
 
 Parameters:
 
@@ -40,13 +40,13 @@ optional:
 
 Outputs:
 
-    When the program running completed, three files would be produced in the output directory.
-    RNA_editing.sites.txt is the all reliable RNA editing sites file;
-    variation.sites.feature.txt is the all varitaion sites file which contain feature values;
-    mut.txt.gz is the all varitaion sites file which contain pileup information;
+    When the program finishes running, three files will be created in the output directory.
+    RNA_editing.sites.txt lists all detected RNA editing sites that pass the detection threshold p;
+    variation.sites.feature.txt lists all variant sites with associated feature values;
+    mut.txt.gz contains all variant sites with pileup information.
 
 Notice:
 
-    The input bam should be indexed, you could use samtools to create index.
+    The input bam should be sorted (indexed), you could use samtools to create index.
     samtools index in.bam
 
