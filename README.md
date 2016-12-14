@@ -24,7 +24,7 @@ We have provided a simple example to test the installation of RED-ML. Under the 
 
 It should finish running in ~2 minutes with the following output files (again, please fill in details). Here is another example of using RED-ML:
 
-   	perl red_ML.update.pl --rnabam in.bam --reference hg19.fa --dbsnp dbsnp138.vcf --simpleRepeat hg19_simpleRepeat.reg.bed --alu hg19.alu.bed --snplist snp.list --outdir outdir
+   	perl red_ML.pl --rnabam in.bam --reference hg19.fa --dbsnp dbsnp138.vcf --simpleRepeat hg19_simpleRepeat.reg.bed --alu hg19.alu.bed --snplist snp.list --outdir outdir
 
 ## Requirements
 
