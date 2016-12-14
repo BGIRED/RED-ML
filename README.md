@@ -60,5 +60,6 @@ When the program finishes running, three files will be created in the output dir
 ## Notice
 
 The input bam should be sorted (indexed), you could use samtools to create index.
+
     samtools index in.bam
 
