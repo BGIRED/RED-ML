@@ -26,13 +26,17 @@ It should finish running in ~2 minutes with the following output files (again, p
 ## Requirements
 
 RED-ML requires the following data files at the time of public release:
-- The reference genome (hg19), downloaded from : http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes.
-- dbSNP138, downloaded from:http://hgdownload.soe.ucsc.edu/goldenPath/hg19/database.
-- simpleRepeat, downloaded from http://hgdownload.soe.ucsc.edu/goldenPath/hg19/database, and then do:
+- The reference genome (hg19), downloaded from: http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes.
+- dbSNP138, downloaded from: http://hgdownload.soe.ucsc.edu/goldenPath/hg19/database.
+- simpleRepeat, downloaded from: http://hgdownload.soe.ucsc.edu/goldenPath/hg19/database, and then do:
+
     awk '{print $2"\t"$3"\t"$4}' simpleRepeat.txt > simpleRepeat.bed
     bedtools merge -i simpleRepeat.bed > simpleRepeat.merge.bed
-- Alu, downloaded from http://hgdownload.soe.ucsc.edu/goldenPath/hg19/database, and do:
+    
+- Alu, downloaded from: http://hgdownload.soe.ucsc.edu/goldenPath/hg19/database, and do:
+
     grep Alu rmsk.txt | awk '{print $6"\t"$7"\t"$8}' > hg19.alu.bed
+
 We have also provided the simpleRepeat and Alu files under the "database" directory for the user's convenience.
 
 ## Optional
