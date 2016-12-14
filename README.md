@@ -35,7 +35,7 @@ RED-ML requires the following data files at the time of public release:
     
 - Alu, downloaded from: http://hgdownload.soe.ucsc.edu/goldenPath/hg19/database, and do:
 
-       grep Alu rmsk.txt | awk '{print $6"\t"$7"\t"$8}' > hg19.alu.bed
+       	grep Alu rmsk.txt | awk '{print $6"\t"$7"\t"$8}' > hg19.alu.bed
 
 We have also provided the simpleRepeat and Alu files under the "database" directory for the user's convenience.
 
