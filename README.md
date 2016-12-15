@@ -20,7 +20,7 @@ RED-ML is a software tool to do genome-wide RNA editing dectection (RED) based o
 
 We have provided a simple example to test the installation of RED-ML. Under the "example" directory, run:
 
-   	perl /localdir/RED-ML/bin/red_ML.pl --rnabam /localdir/RED-ML/example/example.rna.bam --reference /localdir/RED-ML/database/hg19.fa --dbsnp /localdir/RED-ML/example/example.dbsnp.vcf --simpleRepeat /localdir/RED-ML/example/example.simpleRepeat.bed --alu /localdir/RED-ML/example/example.alu.bed --outdir /localdir/RED-ML/test
+   	perl /localdir/RED-ML/bin/red_ML.pl --rnabam /localdir/RED-ML/example/example.rna.bam --reference hg19.fa --dbsnp /localdir/RED-ML/example/example.dbsnp.vcf --simpleRepeat /localdir/RED-ML/example/example.simpleRepeat.bed --alu /localdir/RED-ML/example/example.alu.bed --outdir /localdir/RED-ML/test
 
 It should finish running in ~2 minutes with the following output files (again, please fill in details). Here is another example of using RED-ML:
 
