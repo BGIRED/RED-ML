@@ -22,7 +22,7 @@ We have provided a simple example to test the installation of RED-ML. Under the 
 
    	perl ../bin/red_ML.pl --rnabam example.rna.bam --reference /usr/hg19.fa --dbsnp example.dbsnp.vcf --simpleRepeat example.simpleRepeat.bed --alu example.alu.bed --outdir ./test/
 
-It should finish running in ~2 minutes with the following output files (RNA_editing.sites.txt, variation.sites.feature.txt, mut.txt.gz). Here is another example of using RED-ML:
+It should finish running in ~2 minutes with the following output files (RNA_editing.sites.txt, variation.sites.feature.txt and mut.txt.gz). Here is another example of using RED-ML:
 
    	perl red_ML.pl --rnabam in.bam --reference hg19.fa --dbsnp dbsnp138.vcf --simpleRepeat hg19_simpleRepeat.reg.bed --alu hg19.alu.bed --snplist snp.list --outdir outdir
 
