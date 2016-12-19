@@ -16,13 +16,13 @@ RED-ML is a software tool to do genome-wide RNA editing dectection (RED) based o
     --p            [NUM] the detection threshold, a number between 0 and 1 [default 0.5];
     --help         [STR] show this help information!
 
-## Example
+## Examples
 
 We have provided a simple example to test the installation of RED-ML. Under the "example" directory, run:
 
    	perl ../bin/red_ML.pl --rnabam example.rna.bam --reference /usr/hg19.fa --dbsnp example.dbsnp.vcf --simpleRepeat example.simpleRepeat.bed --alu example.alu.bed --outdir ./test/
 
-It should finish running in ~2 minutes with the following output files (RNA_editing.sites.txt, variation.sites.feature.txt and mut.txt.gz). Here is another example of using RED-ML:
+It should finish running in ~2 minutes with three output files (RNA_editing.sites.txt, variation.sites.feature.txt and mut.txt.gz). Here is another example of using RED-ML:
 
    	perl red_ML.pl --rnabam in.bam --reference hg19.fa --dbsnp dbsnp138.vcf --simpleRepeat hg19_simpleRepeat.reg.bed --alu hg19.alu.bed --snplist snp.list --outdir outdir
 
@@ -42,7 +42,7 @@ RED-ML requires the following data files at the time of public release:
 ```
 We have also provided the simpleRepeat and Alu files under the "database" directory for the user's convenience.
 
-## Optional
+## Optional Steps
 
 ### SNP calling
 
@@ -66,3 +66,6 @@ The input bam should be sorted (indexed), you could use samtools to create index
 
     samtools index in.bam
 
+## License
+
+GNU General Public License version 3.0 (GPLv3), with no restrictions for commercial usage.
