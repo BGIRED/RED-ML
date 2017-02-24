@@ -69,3 +69,7 @@ The input bam should be sorted (indexed), you could use samtools to create index
 ## License
 
 GNU General Public License version 3.0 (GPLv3), with no restrictions for commercial usage.
+
+## Citation
+
+The paper has been accepted by journal of GigaScience.
