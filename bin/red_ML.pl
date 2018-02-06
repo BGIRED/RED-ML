@@ -155,7 +155,7 @@ chomp  $first;
 open OUT1, ">$outdir/variation.sites.feature.txt" or die $!;
 open OUT2, ">$outdir/RNA_editing.sites.txt" or die $!;
 print OUT1 "Pos\tvar_reads\tfre\tmfre\tbqua\tbino\tref_end\tref_mid\talt_end\tend_c\talt_mid\tend_p\tendratio\tref_minus\tref_plus\talt_minus\talt_plus\tsb_c\tstrandbias_p\tstrandbiasratio\thomolen\tsr\tleftvalue\trightvalue\tAG\talu\tmotif\tsnpvalue\thighfre"."\n"
-print OUT2 "Chromosome\tPosition\tDepth\tReference\tReference_support_reads\tAlteration\tAlteration_support_reads\n";
+print OUT2 "Chromosome\tPosition\tDepth\tReference\tReference_support_reads\tAlteration\tAlteration_support_reads\tP-value\n";
 while (<IN>){
     chomp;
     my ($var_reads,$fre,$mfre,$bqua,$bino,$ref_end,$ref_mid,$alt_end,$end_c,$alt_mid,$end_p,$endratio,$ref_minus,$ref_plus,$alt_minus,$alt_plus,$sb_c,$strandbias_p,$strandbiasratio,$homolen,$sr,$leftvalue,$rightvalue,$AG,$alu,$motif,$snpvalue,$alt_end_f,$sb_f,$lowfre,$highfre);
@@ -273,7 +273,7 @@ while (<IN>){
     my $Z = -(($c1)*$var_reads+($c2)*$fre+($c3)*$mfre+($c4)*$bqua+($c5)*$bino+($c6)*$ref_end+($c7)*$ref_mid+($c8)*$alt_end+($c9)*$end_c+($c10)*$alt_mid+($c11)*$end_p+($c12)*$endratio+($c13)*$ref_minus+($c14)*$ref_plus+($c15)*$alt_minus+($c16)*$alt_plus+($c17)*$sb_c+($c18)*$strandbias_p+($c19)*$strandbiasratio+($c20)*$homolen+($c21)*$sr+($c22)*$leftvalue+($c23)*$rightvalue+($c24)*$AG+($c25)*$alu+($c26)*$motif+($c27)*$snpvalue+($c28)*$highfre+($c29));
     my $result =  1/(1+2.718281828459**$Z);
     if ($result >= $p){
-        print OUT2 $a[0]."\t".$a[1]."\t".$a[2]."\t".$a[3]."\t".$a[4]."\t".$a[12]."\t".$a[13]."\n";
+        print OUT2 $a[0]."\t".$a[1]."\t".$a[2]."\t".$a[3]."\t".$a[4]."\t".$a[12]."\t".$a[13]."\t".$result."\n";
     }
 }
 close IN;
