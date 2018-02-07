@@ -154,7 +154,7 @@ my $first = <IN>;
 chomp  $first;
 open OUT1, ">$outdir/variation.sites.feature.txt" or die $!;
 open OUT2, ">$outdir/RNA_editing.sites.txt" or die $!;
-print OUT1 "Pos\tvar_reads\tfre\tmfre\tbqua\tbino\tref_end\tref_mid\talt_end\tend_c\talt_mid\tend_p\tendratio\tref_minus\tref_plus\talt_minus\talt_plus\tsb_c\tstrandbias_p\tstrandbiasratio\thomolen\tsr\tleftvalue\trightvalue\tAG\talu\tmotif\tsnpvalue\thighfre"."\n"
+print OUT1 "Pos\tVariation\tFrequency\tmfre\tQuality\tBino\tRef_end\tRef_mid\tAlt_end\tend_c\tAlt_mid\tend_p\tEndratio\tRef_minus\tRef_plus\tAlt_minus\tAlt_plus\tsb_c\tStrandbias_p\tStrandbiasratio\tHomolen\tSimplerepeat\tLeftvalue\tRightvalue\tAG\tAlu\tmotif\tDBSNP\thighfre"."\n"
 print OUT2 "Chromosome\tPosition\tDepth\tReference\tReference_support_reads\tAlteration\tAlteration_support_reads\tP-value\n";
 while (<IN>){
     chomp;
