@@ -156,7 +156,7 @@ open OUT1, ">$outdir/variation.sites.feature.txt" or die $!;
 open OUT2, ">$outdir/RNA_editing.sites.txt" or die $!;
 print OUT1 "#Pos\tVariation\tFrequency\tmfre\tQuality\tBino\tRef_end\tRef_mid\tAlt_end\tend_c\tAlt_mid\tend_p\tEndratio\tRef_minus\tRef_plus\tAlt_minus\tAlt_plus\tsb_c\tStrandbias_p\tStrandbiasratio\tHomolen\tSimplerepeat\tLeftvalue\tRightvalue\tAG\tAlu\tmotif\tDBSNP\thighfre"."\n";
 print OUT2 "#Chromosome\tPosition\tRead_depth\tReference\tReference_support_reads\tAlternative\tAlternative_support_reads\tP_edit\n";
-print OUT2 "#P_edit: The probability of being a RNA editing site predicted by RED-ML";
+print OUT2 "#P_edit: The probability of being a RNA editing site predicted by RED-ML\n";
 while (<IN>){
     chomp;
     my ($var_reads,$fre,$mfre,$bqua,$bino,$ref_end,$ref_mid,$alt_end,$end_c,$alt_mid,$end_p,$endratio,$ref_minus,$ref_plus,$alt_minus,$alt_plus,$sb_c,$strandbias_p,$strandbiasratio,$homolen,$sr,$leftvalue,$rightvalue,$AG,$alu,$motif,$snpvalue,$alt_end_f,$sb_f,$lowfre,$highfre);
